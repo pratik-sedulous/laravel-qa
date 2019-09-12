@@ -4,7 +4,7 @@
         onclick="event.preventDefault(); document.getElementById('accept-answer-{{ $model->id }}').submit()">
         <i class="fas fa-check fa-2x"></i>
     </a>
-    <form action="{{ route('model.accept', $answer->id) }}" id="accept-answer-{{ $model->id }}" method="POST" style="display:none;">
+    <form action="{{ route('answers.accept', $model->id) }}" id="accept-answer-{{ $model->id }}" method="POST" style="display:none;">
         @csrf
     </form>
 @else
