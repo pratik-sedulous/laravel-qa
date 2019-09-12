@@ -78,5 +78,4 @@ class Question extends Model
     public function upVotes() {
         return $this->votes()->wherePivot('vote', 1);
     }
-
 }
